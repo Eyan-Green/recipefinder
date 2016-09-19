@@ -1,12 +1,12 @@
 <div class="container">
 	<div>
 		<h2>Search for a recipe today!</h2>
-		<p>Search up your favorite recipe, just put input the ingredients you want in it(commas between ingredients!) and voila!</p>
+		<p>Type in the box bellow to find new recipes. Use commas to add multiple ingredients.</p>
 	</div>
 	<div class="search container">
 		<%= form_tag recipes_index_path, method: :get, id: 'search' do %>
-			<%= label_tag :ingredient %>
-			<%= text_field_tag :search , '', placeholder: 'Enter what you\' hungry for' , :required => true %>
+			<%= label_tag :ingredients %>
+			<%= text_field_tag :search , '', placeholder: 'What do you fancy?' , :required => true %>
 			<%= submit_tag "Search", class: 'btn btn-success' %>
 		<% end %>
 	</div>
