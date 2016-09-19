@@ -1,6 +1,9 @@
 class RecipesController < ApplicationController
   def index
-  	@search_term = params[:looking_for] || 'chocolate'
-  	@recipes = Recipe.for(@search_term)
+  	if !params[:search].nil?
+  	else
+  		params[:search] = "chocolate"
+  	end
+  	@recipes = Recipe.for(params[:search])
   end
 end
