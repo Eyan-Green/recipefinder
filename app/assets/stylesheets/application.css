@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header{
+	border-bottom: 2px solid gray;
+	margin-bottom: 20px;
+	
+	/* Box shadow bottom grayish*/
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+	box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+}
+
+img{
+	max-width: 500px;
+	max-height: 500px;
+	width: 100px;
+	height: 100px;
+}
+
+table{
+	text-align: center;
+}
